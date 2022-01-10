@@ -5,17 +5,6 @@ let counter = 1
 
 const refresh = () => {
 ReactDOM.render(
-  <App counter={counter} />, 
+  <App />, 
   document.getElementById('root'))
 }
-
-refresh()
-counter += 1
-refresh()
-counter += 1
-refresh()
-
-setInterval(() => {
-  refresh()
-  counter += 1
-}, 1000) 
